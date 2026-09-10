@@ -3,169 +3,380 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Respawn Maps — GPS Navigation with Game-Inspired Map Styles</title>
-  <meta name="description" content="Turn-by-turn navigation that doesn't look like every other map. Six hand-built styles inspired by classic video game aesthetics. No ads, ever." />
+  <title>Respawn Maps — GPS Navigation Engineered with Game Aesthetics</title>
+  <meta name="description" content="Turn-by-turn GPS navigation designed with classic video game aesthetics. Seven custom vector worlds, spoken voice guidance, CarPlay and Android Auto sync, and zero ad tracking." />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/png" href="favicon.png" />
+  <meta property="og:title" content="Respawn Maps — GPS Navigation with Game Aesthetics" />
+  <meta property="og:description" content="Turn-by-turn GPS with map styles inspired by legendary game worlds. Built for true enthusiasts. No ads, ever." />
+  <meta property="og:image" content="icon.png" />
 </head>
 <body>
 
+<!-- ── Navigation ────────────────────────────────────────── -->
 <nav>
-  <a href="index.html" class="logo">⟳ Respawn Maps</a>
-  <span class="spacer"></span>
-  <a href="privacy.html">Privacy</a>
-  <a href="terms.html">Terms</a>
-  <a href="https://play.google.com/store/apps/details?id=app.Respawn.mobile" class="cta" target="_blank" rel="noopener">Get on Play ↗</a>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <img src="icon.png" alt="Respawn Maps Logo" class="nav-logo-img" />
+      <span class="nav-title">Respawn Maps</span>
+    </a>
+    <div class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#worlds">Map Styles</a>
+      <a href="#carplay">In-Car</a>
+      <a href="#pro">Pro</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="https://play.google.com/store/apps/details?id=app.Respawn.mobile" class="btn-nav" target="_blank" rel="noopener">Get on Play ↗</a>
+    </div>
+  </div>
 </nav>
 
-<!-- ── hero ─────────────────────────────────────── -->
+<!-- ── Hero ─────────────────────────────────────────────── -->
 <section class="hero">
-  <div class="badge"><span class="dot"></span> Now on Android</div>
+  <div class="hero-pill">
+    <span class="pulse-dot"></span>
+    Now on Android &amp; In-Vehicle Dashboards
+  </div>
 
-  <h1>
-    Navigation that<br>
-    <em>looks different</em>
+  <div class="hero-logo-wrapper">
+    <div class="hero-logo-glow"></div>
+    <img src="icon.png" alt="Respawn Maps App Icon" class="hero-app-icon" />
+  </div>
+
+  <h1 class="gradient-text">
+    Navigation that feels<br>
+    like your favorite game.
   </h1>
 
-  <p>
-    Turn-by-turn GPS with map styles inspired by classic video game art.
-    Same roads. Same directions. Completely different feeling.
+  <p class="lead">
+    Turn-by-turn GPS engineered with bespoke video game aesthetics. Seven hand-crafted worlds, real-time spoken guidance, dashboard integration, and absolute privacy.
   </p>
 
   <div class="hero-actions">
-    <a href="https://play.google.com/store/apps/details?id=app.Respawn.mobile"
-       class="btn-primary" target="_blank" rel="noopener">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+    <a href="https://play.google.com/store/apps/details?id=app.Respawn.mobile" class="btn-primary" target="_blank" rel="noopener">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
         <path d="M3.18 23.76c.36.21.78.24 1.14.09L17.1 12 4.32.15C3.96.01 3.54.04 3.18.26 2.49.7 2.49 1.84 2.49 2.2v19.6c0 .36 0 1.5.69 1.96z"/>
         <path d="M20.82 10.38l-3.12-1.78L14.52 12l3.18 3.4 3.12-1.78c.9-.52.9-1.7 0-2.24z" opacity=".7"/>
         <path d="M4.32 23.85 17.7 13.22 14.52 12 4.32 23.85z" opacity=".5"/>
         <path d="M4.32.15 14.52 12 17.7 10.78 4.32.15z" opacity=".5"/>
       </svg>
-      Download — Free
+      Download Free on Google Play
     </a>
-    <a href="#features" class="btn-secondary">See the styles ↓</a>
+    <a href="#features" class="btn-secondary">
+      Explore All Features ↓
+    </a>
   </div>
 </section>
 
-<!-- ── style chips ────────────────────────────── -->
-<div class="styles-strip">
-  <div class="style-chip">
-    <span class="swatch" style="background:#f5c53f"></span>
-    Grand City Heist
-  </div>
-  <div class="style-chip">
-    <span class="swatch" style="background:#0d1b2a"></span>
-    Neon Night
-  </div>
-  <div class="style-chip">
-    <span class="swatch" style="background:#c9a97a"></span>
-    Frontier Parchment
-  </div>
-  <div class="style-chip">
-    <span class="swatch" style="background:#5bb8f5"></span>
-    West Coast '95
-  </div>
-  <div class="style-chip">
-    <span class="swatch" style="background:#8bc34a"></span>
-    Pixel Block
-  </div>
-  <div class="style-chip">
-    <span class="swatch" style="background:#4a3728"></span>
-    Rust Lands
-  </div>
-</div>
-
-<hr class="divider" />
-
-<!-- ── features ──────────────────────────────── -->
+<!-- ── Features Bento Grid ──────────────────────────────── -->
 <section class="section" id="features">
-  <div class="section-label">What you get</div>
-  <h2>Navigation, reimagined</h2>
-  <p class="lead">
-    Six hand-built map styles. Every road accurate. Every turn spoken.
-    No subscriptions unless you want more.
+  <div class="section-tag">Capabilities</div>
+  <h2 class="section-title gradient-text">Engineered for the road.<br>Styled for the player.</h2>
+  <p class="section-desc">
+    Every street is precise. Every maneuver is clear. Respawn Maps blends production-grade satellite navigation with the artistic soul of video games.
   </p>
 
-  <div class="features-grid">
-    <div class="feature-card">
-      <div class="feature-icon">🗺️</div>
-      <h3>Six map styles</h3>
-      <p>Grand City Heist, Neon Night, Frontier Parchment, West Coast '95, Pixel Block, and Rust Lands. Grand City Heist is free forever.</p>
+  <div class="bento-grid">
+    <!-- Card 1: Turn by turn (Col 8) -->
+    <div class="bento-card col-8">
+      <div>
+        <div class="card-tag">Core GPS Engine</div>
+        <h3 class="card-title">Turn-by-turn spoken guidance.</h3>
+        <p class="card-desc">
+          High-accuracy routing powered by Mapbox with real-time audio voice prompts, smart lane guidance, and instantaneous automatic recalculation whenever you take an alternate turn.
+        </p>
+      </div>
+      <div class="feature-pill-row">
+        <span class="feature-tag-pill">🎙️ Voice Speech Engine</span>
+        <span class="feature-tag-pill">⏱️ Accurate Live ETA</span>
+        <span class="feature-tag-pill">⚡ Auto Rerouting</span>
+      </div>
     </div>
-    <div class="feature-card">
-      <div class="feature-icon">🧭</div>
-      <h3>Turn-by-turn guidance</h3>
-      <p>Spoken directions, automatic rerouting, and on-screen cues — on whichever style you've picked.</p>
+
+    <!-- Card 2: Privacy (Col 4) -->
+    <div class="bento-card col-4">
+      <div>
+        <div class="card-tag">Privacy by Design</div>
+        <h3 class="card-title">Zero tracking.<br>Zero ads.</h3>
+        <p class="card-desc">
+          No sign-ups, no passwords, and no tracking SDKs. Your location data never leaves your device.
+        </p>
+      </div>
+      <div class="card-badge">100% On-Device GPS</div>
     </div>
-    <div class="feature-card">
-      <div class="feature-icon">🚗</div>
-      <h3>Android Auto</h3>
-      <p>Pro users get Respawn Maps on their car's screen via Android Auto. Same styles, full guidance, no phone fiddling while you drive.</p>
+
+    <!-- Card 3: In-Car (Col 4) -->
+    <div class="bento-card col-4" id="carplay">
+      <div>
+        <div class="card-tag">Vehicle Sync</div>
+        <h3 class="card-title">CarPlay &amp;<br>Android Auto.</h3>
+        <p class="card-desc">
+          Connect seamlessly to your car's in-dash touchscreen. Full navigation on the center console while you drive safely.
+        </p>
+      </div>
+      <div class="card-badge">In-Dash Ready</div>
     </div>
-    <div class="feature-card">
-      <div class="feature-icon">🔍</div>
-      <h3>Address search</h3>
-      <p>Search for any address or place. Results are biased to where you are so you get a nearby result, not one on another continent.</p>
+
+    <!-- Card 4: Offline Maps (Col 4) -->
+    <div class="bento-card col-4">
+      <div>
+        <div class="card-tag">No Signal Required</div>
+        <h3 class="card-title">Offline vector maps.</h3>
+        <p class="card-desc">
+          Download complete vector map packs directly to your device storage. Navigate mountain passes and desert roads with zero cellular reception.
+        </p>
+      </div>
+      <div class="card-badge">Offline Caching</div>
     </div>
-    <div class="feature-card">
-      <div class="feature-icon">📍</div>
-      <h3>Saved places</h3>
-      <p>Save your favourites for one-tap navigation. Free plan stores three; Pro removes the limit entirely.</p>
+
+    <!-- Card 5: Weather HUD (Col 4) -->
+    <div class="bento-card col-4">
+      <div>
+        <div class="card-tag">Atmosphere</div>
+        <h3 class="card-title">Live ambient weather.</h3>
+        <p class="card-desc">
+          A sleek HUD pill displays local conditions, precipitation, and ambient temperature directly over the map canvas in real time.
+        </p>
+      </div>
+      <div class="card-badge">Real-time Telemetry</div>
     </div>
-    <div class="feature-card">
-      <div class="feature-icon">🚫</div>
-      <h3>Zero ads. Zero tracking.</h3>
-      <p>No banners, no interstitials, no ad SDK. There is no advertising in this app, in either the free or paid version.</p>
+
+    <!-- Card 6: Custom POI Icons (Col 6) -->
+    <div class="bento-card col-6">
+      <div>
+        <div class="card-tag">Iconography</div>
+        <h3 class="card-title">Hundreds of themed POI markers.</h3>
+        <p class="card-desc">
+          Every landmark is customized. Gas pumps, repair shops, diners, coffee spots, hospitals, and ATMs are hand-drawn in matching visual styles for every map skin.
+        </p>
+      </div>
+      <div class="feature-pill-row">
+        <span class="feature-tag-pill">⛽ Fuel Stations</span>
+        <span class="feature-tag-pill">🏥 Hospitals</span>
+        <span class="feature-tag-pill">☕ Coffee &amp; Food</span>
+        <span class="feature-tag-pill">🔧 Garages</span>
+      </div>
+    </div>
+
+    <!-- Card 7: Pucks & Compasses (Col 6) -->
+    <div class="bento-card col-6">
+      <div>
+        <div class="card-tag">HUD Elements</div>
+        <h3 class="card-title">Dynamic location pucks &amp; compass.</h3>
+        <p class="card-desc">
+          Replace the boring blue dot with dynamic chvrons, glowing radar circles, and authentic cardinal compass badges that rotate precisely with your heading.
+        </p>
+      </div>
+      <div class="feature-pill-row">
+        <span class="feature-tag-pill">🧭 Gyro Heading</span>
+        <span class="feature-tag-pill">🎯 Minimap Radar</span>
+        <span class="feature-tag-pill">📍 Custom Chevrons</span>
+      </div>
     </div>
   </div>
 </section>
 
-<hr class="divider" />
+<!-- ── Map Styles Showcase ──────────────────────────────── -->
+<section class="section" id="worlds">
+  <div class="section-tag">The Styles</div>
+  <h2 class="section-title gradient-text">Seven bespoke map worlds.</h2>
+  <p class="section-desc">
+    Carefully researched color palettes, tailored typography, custom road casings, and distinct building footprints designed for gaming fans.
+  </p>
 
-<!-- ── pricing ────────────────────────────────── -->
-<section class="section" id="pricing">
-  <div class="section-label">Pricing</div>
-  <h2>One map, two tiers</h2>
-  <p class="lead">Free gets you the full navigation experience. Pro unlocks every style and every saved place.</p>
-
-  <div class="pricing-wrap">
-    <div class="plan">
-      <div class="plan-name">Free</div>
-      <div class="plan-price">$0</div>
-      <div class="plan-sub">Always free, no credit card</div>
-      <ul>
-        <li><span class="check">✓</span> Full turn-by-turn guidance</li>
-        <li><span class="check">✓</span> Address &amp; place search</li>
-        <li><span class="check">✓</span> Grand City Heist style</li>
-        <li><span class="check">✓</span> Up to 3 saved places</li>
-        <li><span class="check">✓</span> No ads, ever</li>
-      </ul>
+  <div class="skins-grid">
+    <!-- Skin 1 -->
+    <div class="skin-card">
+      <div class="skin-header">
+        <div class="skin-indicator" style="background:#f5c53f; color:#f5c53f"></div>
+        <span class="card-badge">Free Forever</span>
+      </div>
+      <h3 class="skin-name">Grand City Heist V</h3>
+      <p class="skin-flavor">
+        The iconic dark pause-map aesthetic with high-contrast amber highways, midnight building blocks, and vibrant radar POI badges.
+      </p>
+      <div class="skin-chips">
+        <span class="skin-chip">Crime City</span>
+        <span class="skin-chip">High Contrast</span>
+        <span class="skin-chip">Radar HUD</span>
+      </div>
     </div>
 
-    <div class="plan featured">
-      <div class="plan-name">Pro</div>
-      <div class="plan-price">$2.99<span style="font-size:1rem;font-weight:500">/mo</span></div>
-      <div class="plan-sub">or lifetime one-time purchase via Play</div>
-      <ul>
-        <li><span class="check">✓</span> Everything in Free</li>
-        <li><span class="check">✓</span> All 6 map styles</li>
-        <li><span class="check">✓</span> Android Auto</li>
-        <li><span class="check">✓</span> Unlimited saved places</li>
-        <li><span class="check">✓</span> Cancel any time in Google Play</li>
-      </ul>
+    <!-- Skin 2 -->
+    <div class="skin-card">
+      <div class="skin-header">
+        <div class="skin-indicator" style="background:#5bb8f5; color:#5bb8f5"></div>
+        <span class="card-badge">Retro West</span>
+      </div>
+      <h3 class="skin-name">San County '95</h3>
+      <p class="skin-flavor">
+        Sun-drenched 90s West Coast arcade feel. Golden coastal freeways, nostalgic California vibes, and vintage city terrain.
+      </p>
+      <div class="skin-chips">
+        <span class="skin-chip">West Coast</span>
+        <span class="skin-chip">Golden Roads</span>
+        <span class="skin-chip">90s Arcade</span>
+      </div>
+    </div>
+
+    <!-- Skin 3 -->
+    <div class="skin-card">
+      <div class="skin-header">
+        <div class="skin-indicator" style="background:#00f0ff; color:#00f0ff"></div>
+        <span class="card-badge">Cyberpunk</span>
+      </div>
+      <h3 class="skin-name">Cyberneon 2077</h3>
+      <p class="skin-flavor">
+        Electric cyan avenues, luminous neon magenta interchanges, and ultra-sharp angular typography set in authentic Rajdhani.
+      </p>
+      <div class="skin-chips">
+        <span class="skin-chip">Neon Grid</span>
+        <span class="skin-chip">Futuristic HUD</span>
+        <span class="skin-chip">Dark Obsidian</span>
+      </div>
+    </div>
+
+    <!-- Skin 4 -->
+    <div class="skin-card">
+      <div class="skin-header">
+        <div class="skin-indicator" style="background:#70b840; color:#70b840"></div>
+        <span class="card-badge">Voxel 8-Bit</span>
+      </div>
+      <h3 class="skin-name">Blockcraft</h3>
+      <p class="skin-flavor">
+        Every road rendered into blocky, pixelated paths. Emerald voxel terrain, isometric textures, and retro arcade typography.
+      </p>
+      <div class="skin-chips">
+        <span class="skin-chip">Voxel Terrain</span>
+        <span class="skin-chip">Pixel Icons</span>
+        <span class="skin-chip">Monocraft Font</span>
+      </div>
+    </div>
+
+    <!-- Skin 5 -->
+    <div class="skin-card">
+      <div class="skin-header">
+        <div class="skin-indicator" style="background:#d4a373; color:#d4a373"></div>
+        <span class="card-badge">Outlaw Frontier</span>
+      </div>
+      <h3 class="skin-name">Red Valley Outlaws</h3>
+      <p class="skin-flavor">
+        Aged 1899 topographical parchment, sepia mountain ridges, frontier trail contours, and wood-type western slab serif lettering.
+      </p>
+      <div class="skin-chips">
+        <span class="skin-chip">Parchment Map</span>
+        <span class="skin-chip">Frontier Trails</span>
+        <span class="skin-chip">Wild West</span>
+      </div>
+    </div>
+
+    <!-- Skin 6 -->
+    <div class="skin-card">
+      <div class="skin-header">
+        <div class="skin-indicator" style="background:#90be6d; color:#90be6d"></div>
+        <span class="card-badge">Post-Nuclear</span>
+      </div>
+      <h3 class="skin-name">RadZone IV</h3>
+      <p class="skin-flavor">
+        Post-apocalyptic wasteland aesthetic with radioactive fallout hazard contours, dusty khaki plains, and terminal monospace text.
+      </p>
+      <div class="skin-chips">
+        <span class="skin-chip">Wasteland</span>
+        <span class="skin-chip">Radiation Contours</span>
+        <span class="skin-chip">Terminal HUD</span>
+      </div>
+    </div>
+
+    <!-- Skin 7 -->
+    <div class="skin-card">
+      <div class="skin-header">
+        <div class="skin-indicator" style="background:#ff70a6; color:#ff70a6"></div>
+        <span class="card-badge">Neon Coast</span>
+      </div>
+      <h3 class="skin-name">Vice Coast '25</h3>
+      <p class="skin-flavor">
+        Sun-drenched tropical neon coastline, turquoise ocean currents, pastel boulevard markings, and retro sunset atmosphere.
+      </p>
+      <div class="skin-chips">
+        <span class="skin-chip">Ocean Waves</span>
+        <span class="skin-chip">Pastel Neon</span>
+        <span class="skin-chip">Palm Avenues</span>
+      </div>
     </div>
   </div>
 </section>
 
-<hr class="divider" />
+<!-- ── Pro Experience Section (NO PRICE MENTION) ─────────── -->
+<section class="section" id="pro">
+  <div class="pro-banner">
+    <div class="card-tag">Pro Experience</div>
+    <h2 class="gradient-text">The Ultimate Drive. Unlocked.</h2>
+    <p>
+      Elevate every journey with the complete Respawn Maps collection — all 7 game worlds, seamless vehicle dashboard sync, and offline packs.
+    </p>
 
-<!-- ── footer ─────────────────────────────────── -->
+    <div class="pro-features-list">
+      <div class="pro-feature-item">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+        <div>
+          <strong>All Seven Game Worlds</strong>
+          <span>Instant access to every current and upcoming map skin.</span>
+        </div>
+      </div>
+
+      <div class="pro-feature-item">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+        <div>
+          <strong>In-Car Dashboard Sync</strong>
+          <span>Full-screen navigation via Android Auto and CarPlay.</span>
+        </div>
+      </div>
+
+      <div class="pro-feature-item">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+        <div>
+          <strong>Unlimited Saved Places</strong>
+          <span>Bookmark your favorite destinations, garages, and hideouts.</span>
+        </div>
+      </div>
+
+      <div class="pro-feature-item">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+        <div>
+          <strong>Offline Map Downloads</strong>
+          <span>Explore and navigate without relying on cellular data.</span>
+        </div>
+      </div>
+    </div>
+
+    <a href="https://play.google.com/store/apps/details?id=app.Respawn.mobile" class="btn-primary" target="_blank" rel="noopener">
+      Get Respawn on Google Play
+    </a>
+  </div>
+</section>
+
+<!-- ── Footer ────────────────────────────────────────────── -->
 <footer>
-  <span>© 2026 Respawn Maps. Published by VOLTGENIX LLC (Ash Build). Map data © Mapbox © OpenStreetMap.</span>
-  <div class="links">
-    <a href="privacy.html">Privacy Policy</a>
-    <a href="terms.html">Terms of Service</a>
-    <a href="mailto:Contact@ashbuild.app">Contact</a>
+  <div class="footer-inner">
+    <div>
+      © 2026 Respawn Maps. Published by <strong>VOLTGENIX LLC</strong> (operating as <strong>Ash Build</strong>).
+      <br>
+      <span style="color:var(--text-tertiary)">Map engine &amp; routing data © Mapbox, OpenStreetMap contributors.</span>
+    </div>
+    <div class="footer-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="mailto:Contact@ashbuild.app">Support &amp; Contact</a>
+    </div>
   </div>
 </footer>
 
